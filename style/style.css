@@ -1,0 +1,184 @@
+
+@import url(''); /* Realiza la importa de ficheros externos para que css pueda plicar ciertos estilis, tales como fuentes u otras hojas de estilo*/
+
+
+/* el "*" es un modificador general del DOM */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: rgb(180, 194, 221);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*estilos aplicados al encabezado como fondo de colo y el alto*/
+
+.header {
+  background-color: rgb(209, 205, 199);
+  height: 70px;
+}
+
+/* posicion del logo*/
+.logo {
+  float: left;
+  padding: 10px;
+}
+
+/* posicion del menu*/
+.menu {
+  float: right;
+  margin: 24px;
+}
+
+/* Posicion de la lista y estilo*/
+.menu li{
+  display: inline;
+  list-style: none;
+}
+
+/* estilos del enlace*/
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+
+/* posicion del banner y estilos*/
+.banner {
+  background-image: url(../assets/banner.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/** 
+La regla "banner h1" se aplica a un elemento "h1" dentro de "banner" y alinea el texto a la derecha, establece el tamaño de la fuente en 80 píxeles y agrega un relleno de 150 píxeles y 50 píxeles.
+*/
+.banner h1 {
+  text-align: right;
+  font-size: 80px;
+  padding: 150px 50px;
+}
+/** 
+La clase "tablaCategorias" se aplica a un elemento "tablaCategorias" y establece el ancho automático y el margen centrado.
+*/
+.tablaCategorias {
+  width: auto;
+  margin: auto;
+}
+/** 
+
+/** 
+La clase "boton_categorias" se aplica a un elemento "boton_categorias" y establece el tamaño, el color de fondo, el borde redondeado, el tamaño de la fuente, el margen, el relleno, la altura de la línea, el alineamiento del texto y el flotamiento.
+*/
+.boton_categorias {
+  width: 80px;
+  height: 80px;
+  background-color: #f38902;
+  border-radius: 50px;
+  font-size: 11px;
+  margin: 5px;
+  padding: 10px;
+  line-height: 45px;
+  text-align: center;
+  float: left;
+}
+/** 
+
+*/
+.boton_categorias:hover {
+  opacity: 0.3;
+}
+/** 
+
+*/
+.boton_categorias a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 5px 5px 5px;
+}
+/** 
+
+*/
+.biografia {
+  background-color: black;
+  color: white;
+  padding: 20px 100px 70px 100px;
+  text-align: justify;
+}
+/** 
+
+*/
+.biografia h2 {
+  text-align: center;
+  padding: 10px;
+}
+/** 
+
+*/
+.premios {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+/** 
+
+*/
+.premios table {
+  padding: 30px 100px 30px 100px;
+}
+/** 
+
+*/
+.premios h2 {
+  padding: 30px 0px;
+}
+/** 
+
+*/
+.premios h3 {
+  background-color: rgb(255, 145, 19);
+  border: 2px solid blue;
+  text-align: center;
+  padding: 15px 30px 15px 30px;
+  margin: 40px;
+}
+/** 
+
+*/
+.premios td {
+  text-align: left;
+}
+/** 
+
+*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 100px 70px 100px;
+}
+
+/*
+Los media query o media screen son reglas de css, que me permiten condicionar el estilo deL DOM  variando segun 
+el ancho de mi dispositivo 
+
++ se compo de una condicion o más
++ "only screen" aplica el diseño unicamen a esa resolucion
++ puedo indicar rango entre "(min-width: 667px)*Ancho minimo* and (max-width:844px)*ancho maximo*"
+
+
+@media only screen and (min-width: 667px) and (max-width:844px) and (orientation:landscape) {
+  .logo{
+    padding-left: 30%;
+  }
+  .header{
+    background-color: blueviolet;
+  }
+
+}
+*/
